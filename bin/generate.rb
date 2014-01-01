@@ -34,6 +34,10 @@ def sblue
   { gui: '#778899', cterm: 24 }
 end
 
+def yellow
+  { gui: 'Yellow', cterm: 226 }
+end
+
 def hi(group, options={})
   tokens = []
   tokens << 'hi'
@@ -122,8 +126,8 @@ hi :LineNr, fg: dgray
 hi :CursorLineNr, fg: white, bold: true
 
 # Search.
-hi :Search, fg: black, bg: lgray
-hi :Visual, fg: black, bg: lgray
+hi :Search, fg: white, bg: sblue
+hi :Visual, fg: white, bg: sblue
 
 # Tildes at the bottom of a buffer, etc.
 hi :NonText, fg: dgray
@@ -138,7 +142,7 @@ hi :markdownHeadingRule, fg: white, bold: true
 hi :markdownLinkText, fg: sblue, underline: true
 
 # Notes
-hi :Todo, fg: white, bg: sblue, bold: true
+hi :Todo, fg: black, bg: yellow, bold: true
 
 # Help.
 hi :helpSpecial
