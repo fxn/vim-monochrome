@@ -91,6 +91,14 @@ hi :Cursor, fg: black, bg: lgray
 
 # Cursor line.
 hi :CursorLine, bg: bgray
+hi :CursorLineNr, fg: white, bold: true
+
+# Folding.
+hi :FoldColumn, fg: dgray
+hi :Folded
+
+# Line numbers gutter.
+hi :LineNr, fg: dgray
 
 # Main groups for programming langages.
 hi :Statement, fg: white, bold: true
@@ -120,10 +128,6 @@ hi :perlMatchStartEnd, fg: sblue
 
 # Python tweaks.
 hi :pythonEscape, fg: sblue
-
-# Line numbers gutter.
-hi :LineNr, fg: dgray
-hi :CursorLineNr, fg: white, bold: true
 
 # Search.
 hi :Search, fg: white, bg: sblue
