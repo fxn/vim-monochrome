@@ -83,6 +83,7 @@ endif
 
 let g:colors_name = 'monochrome'
 
+" These commands are generated, see bin/generate.rb.
 EOS
 
 # Basic colors.
