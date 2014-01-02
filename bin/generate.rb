@@ -152,6 +152,7 @@ hi :Todo, fg: black, bg: yellow, bold: true
 # Help.
 hi :helpSpecial
 hi :helpHyperTextJump, fg: sblue, underline: true
+hi :helpNote # linked to Todo
 
 # Vim script.
 hi :vimOption
