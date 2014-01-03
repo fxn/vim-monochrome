@@ -1,11 +1,11 @@
-# monochrome - A dark Vim color scheme for your focused hacking sessions
+## monochrome - A dark Vim color scheme for your focused hacking sessions
 
-## Installation
+### Installation
 
     cd ~/.vim/bundle
     git clone https://github.com/fxn/vim-monochrome.git
 
-## Configuration
+### Configuration
 
 This color scheme works in GUIs and 256 color terminals, throw this to your
 _~/.vimrc_:
@@ -13,33 +13,33 @@ _~/.vimrc_:
     syntax on
     colorscheme monochrome
 
-## Screenshots
+### Screenshots
 
-### Ruby
+#### Ruby
 
 ![Monochrome Color Scheme for Vim - Ruby](http://github.com/fxn/vim-monochrome/raw/master/img/ruby.jpg)
 
-### C
+#### C
 
 ![Monochrome Color Scheme for Vim - C](http://github.com/fxn/vim-monochrome/raw/master/img/c.jpg)
 
-### Go
+#### Go
 
 ![Monochrome Color Scheme for Vim - Go](http://github.com/fxn/vim-monochrome/raw/master/img/go.jpg)
 
-### Perl
+#### Perl
 
 ![Monochrome Color Scheme for Vim - Perl](http://github.com/fxn/vim-monochrome/raw/master/img/perl.jpg)
 
-### Python
+#### Python
 
 ![Monochrome Color Scheme for Vim - Python](http://github.com/fxn/vim-monochrome/raw/master/img/python.jpg)
 
-### Elixir
+#### Elixir
 
 ![Monochrome Color Scheme for Vim - Elixir](http://github.com/fxn/vim-monochrome/raw/master/img/elixir.jpg)
 
-### JavaScript
+#### JavaScript
 
 ![Monochrome Color Scheme for Vim - JavaScrit](http://github.com/fxn/vim-monochrome/raw/master/img/javascript.jpg)
 
