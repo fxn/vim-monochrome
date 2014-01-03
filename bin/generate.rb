@@ -107,13 +107,14 @@ hi :PreProc, fg: white, bold: true
 hi :String, fg: sblue
 hi :Comment, fg: cgray
 hi :Constant
-hi :Type
+hi :Type, fg: white, bold: true
 hi :Function, fg: white
 hi :Identifier
 hi :Special
 hi :MatchParen, fg: black, bg: lgray
 
 # Ruby tweaks.
+hi :rubyConstant
 hi :rubySharpBang, fg: cgray
 hi :rubyStringDelimiter, fg: sblue
 hi :rubyStringEscape, fg: sblue
