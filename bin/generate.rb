@@ -131,6 +131,9 @@ hi :perlMatchStartEnd, fg: sblue
 # Python tweaks.
 hi :pythonEscape, fg: sblue
 
+# JavaScript tweaks.
+hi :javaScriptFunction, fg: white, bold: true
+
 # Search.
 hi :Search, fg: white, bg: sblue
 hi :Visual, fg: white, bg: sblue
