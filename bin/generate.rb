@@ -52,15 +52,10 @@ def hi(group, options={})
   tokens << "ctermbg=#{bg[:cterm]}"
 
   rest = options.keys.join(',')
-  if rest.empty?
-    tokens << "gui=NONE"
-    tokens << "cterm=NONE"
-    tokens << "term=NONE"
-  else
-    tokens << "gui=#{rest}"
-    tokens << "cterm=#{rest}"
-    tokens << "term=#{rest}"
-  end
+  rest = 'NONE' if rest.empty?
+  tokens << "gui=#{rest}"
+  tokens << "cterm=#{rest}"
+  tokens << "term=#{rest}"
 
   puts tokens.join(' ')
 end
