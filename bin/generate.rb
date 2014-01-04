@@ -134,6 +134,9 @@ hi :pythonEscape, fg: sblue
 # JavaScript tweaks.
 hi :javaScriptFunction, fg: white, bold: true
 
+# Elixir tweaks.
+hi :elixirDelimiter, fg: sblue
+
 # Search.
 hi :Search, fg: white, bg: sblue
 hi :Visual, fg: white, bg: sblue
