@@ -148,8 +148,12 @@ hi :markdownHeadingDelimiter, fg: white, bold: true
 hi :markdownHeadingRule, fg: white, bold: true
 hi :markdownLinkText, fg: sblue, underline: true
 
-# Notes
+# Notes.
 hi :Todo, fg: black, bg: yellow, bold: true
+
+# Popup menu.
+hi :Pmenu, fg: white, bg: sblue
+hi :PmenuSel, fg: sblue, bg: white
 
 # Help.
 hi :helpSpecial
@@ -168,3 +172,4 @@ hi :vimHiCTerm
 hi :vimHiCTermFgBg
 hi :vimSynType
 hi :vimCommentTitle, fg: cgray
+
