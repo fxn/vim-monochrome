@@ -17,29 +17,29 @@ _~/.vimrc_:
 
 #### Ruby
 
-![Monochrome Color Scheme for Vim - Ruby](./img/ruby.jpg)
+![Monochrome Color Scheme for Vim - Ruby](img/ruby.jpg)
 
 #### C
 
-![Monochrome Color Scheme for Vim - C](./img/c.jpg)
+![Monochrome Color Scheme for Vim - C](img/c.jpg)
 
 #### Go
 
-![Monochrome Color Scheme for Vim - Go](./img/go.jpg)
+![Monochrome Color Scheme for Vim - Go](img/go.jpg)
 
 #### Perl
 
-![Monochrome Color Scheme for Vim - Perl](./img/perl.jpg)
+![Monochrome Color Scheme for Vim - Perl](img/perl.jpg)
 
 #### Python
 
-![Monochrome Color Scheme for Vim - Python](./img/python.jpg)
+![Monochrome Color Scheme for Vim - Python](img/python.jpg)
 
 #### Elixir
 
-![Monochrome Color Scheme for Vim - Elixir](./img/elixir.jpg)
+![Monochrome Color Scheme for Vim - Elixir](img/elixir.jpg)
 
 #### JavaScript
 
-![Monochrome Color Scheme for Vim - JavaScrit](./img/javascript.jpg)
+![Monochrome Color Scheme for Vim - JavaScrit](img/javascript.jpg)
 
