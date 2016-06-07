@@ -89,6 +89,9 @@ hi :Cursor, fg: black, bg: lgray
 hi :CursorLine, bg: bgray
 hi :CursorLineNr, fg: white, bold: true
 
+# Colorcolumn
+hi ColorColumn, bg: bgray 
+
 # Folding.
 hi :FoldColumn, fg: dgray
 hi :Folded
