@@ -66,7 +66,7 @@ puts <<-EOS
 " This file is generated, please check bin/generate.rb.
 "
 " Name:       monochrome.vim
-" Maintainer: Xavier Noria <fxn@hashref.com> 
+" Maintainer: Xavier Noria <fxn@hashref.com>
 " License:    MIT
 
 set background=dark
@@ -89,8 +89,8 @@ hi :Cursor, fg: black, bg: lgray
 hi :CursorLine, bg: bgray
 hi :CursorLineNr, fg: white, bold: true
 
-# Colorcolumn
-hi ColorColumn, bg: bgray 
+# Color column.
+hi :ColorColumn, bg: bgray
 
 # Folding.
 hi :FoldColumn, fg: dgray
