@@ -176,3 +176,12 @@ hi :vimHiCTermFgBg
 hi :vimSynType
 hi :vimCommentTitle, fg: cgray
 
+# NeoMake
+hi :NeomakeMessageSign, fg: lgray
+hi :NeomakeWarningSign, fg: sblue
+hi :NeomakeErrorSign, fg: yellow
+hi :NeomakeInfoSign, fg: lgray
+hi :NeomakeError, fg: yellow
+hi :NeomakeInfo, fg: lgray, bold: true
+hi :NeomakeMessage, fg: lgray
+hi :NeomakeWarning, fg: yellow
