@@ -73,3 +73,11 @@ hi vimHiCTerm guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=
 hi vimHiCTermFgBg guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimSynType guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi vimCommentTitle guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeMessageSign guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeWarningSign guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeErrorSign guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeInfoSign guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeError guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeInfo guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
+hi NeomakeMessage guifg=LightGray ctermfg=252 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi NeomakeWarning guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
