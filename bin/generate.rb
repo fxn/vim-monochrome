@@ -2,10 +2,8 @@
 
 # Mapping guidelines:
 #
-#   http://raebear.net/comp/emacscolors.html
-#   http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
+#   https://jonasjacek.github.io/colors/
 #
-
 def white
   { gui: 'White', cterm: 15  }
 end
