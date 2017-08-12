@@ -13,7 +13,7 @@ def black
 end
 
 def bgray
-  { gui: '#202020', cterm: 234 }
+  { gui: '#202020', cterm: 233 }
 end
 
 def lgray
