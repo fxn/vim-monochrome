@@ -17,7 +17,7 @@ def bgray
 end
 
 def lgray
-  { gui: 'LightGray', cterm: 252 }
+  { gui: 'LightGray', cterm: 255 }
 end
 
 def cgray
