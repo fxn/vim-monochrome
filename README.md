@@ -2,8 +2,14 @@
 
 ### Installation
 
-    cd ~/.vim/bundle
-    git clone https://github.com/fxn/vim-monochrome.git
+Installation depends on how you manage packages. For example, with
+[vim-plug](https://github.com/junegunn/vim-plug) add
+
+```
+Plug 'fxn/vim-monochrome'
+```
+
+to your init file.
 
 ### Configuration
 
