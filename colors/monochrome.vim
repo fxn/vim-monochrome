@@ -1,7 +1,5 @@
 " Vim color scheme
 "
-" This file is generated, please check bin/generate.rb.
-"
 " Name:       monochrome.vim
 " Maintainer: Xavier Noria <fxn@hashref.com>
 " License:    MIT
@@ -15,69 +13,142 @@ endif
 
 let g:colors_name = 'monochrome'
 
-" These commands are generated, see bin/generate.rb.
-hi Normal guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Cursor guifg=Black ctermfg=16 guibg=LightGray ctermbg=255 gui=NONE cterm=NONE term=NONE
-hi CursorLine guifg=NONE ctermfg=NONE guibg=#202020 ctermbg=233 gui=NONE cterm=NONE term=NONE
-hi CursorLineNr guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi ColorColumn guifg=LightGray ctermfg=255 guibg=#202020 ctermbg=233 gui=NONE cterm=NONE term=NONE
-hi FoldColumn guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Folded guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi LineNr guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Statement guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi PreProc guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi String guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Comment guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Constant guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Type guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi Function guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Identifier guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Special guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi MatchParen guifg=Black ctermfg=16 guibg=LightGray ctermbg=255 gui=NONE cterm=NONE term=NONE
-hi rubyConstant guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubySharpBang guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubyStringDelimiter guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubyStringEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubyRegexpEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubyRegexpAnchor guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi rubyRegexpSpecial guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi perlSharpBang guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi perlStringStartEnd guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi perlStringEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi perlMatchStartEnd guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi pythonEscape guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi javaScriptFunction guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi elixirDelimiter guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Search guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
-hi Visual guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
-hi NonText guifg=DarkGray ctermfg=248 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi Directory guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi Title guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownHeadingDelimiter guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownHeadingRule guifg=White ctermfg=15 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi markdownLinkText guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
-hi Todo guifg=Black ctermfg=16 guibg=Yellow ctermbg=226 gui=bold cterm=bold term=bold
-hi Pmenu guifg=White ctermfg=15 guibg=#778899 ctermbg=67 gui=NONE cterm=NONE term=NONE
-hi PmenuSel guifg=#778899 ctermfg=67 guibg=White ctermbg=15 gui=NONE cterm=NONE term=NONE
-hi helpSpecial guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi helpHyperTextJump guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=underline cterm=underline term=underline
-hi helpNote guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimOption guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimGroup guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiClear guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGroup guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiAttrib guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGui guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiGuiFgBg guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiCTerm guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimHiCTermFgBg guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimSynType guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi vimCommentTitle guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeMessageSign guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeWarningSign guifg=#778899 ctermfg=67 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeErrorSign guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeInfoSign guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeError guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeInfo guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=bold cterm=bold term=bold
-hi NeomakeMessage guifg=LightGray ctermfg=255 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi NeomakeWarning guifg=Yellow ctermfg=226 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+let s:white  = ['White', 15]
+let s:black  = ['Black', 16]
+let s:bgray  = ['#101010', 233]
+let s:lgray  = ['LightGray', 255]
+let s:cgray  = ['#737373', 243]
+let s:dgray  = ['DarkGray', 248]
+let s:sblue  = ['#778899', 67]
+let s:yellow = ['Yellow', 226]
+
+let s:default_fg = s:lgray
+let s:default_bg = s:black
+
+let s:italic    = 'italic'
+let s:bold      = 'bold'
+let s:underline = 'underline'
+let s:none      = 'NONE'
+
+function! s:hi(...)
+    let group = a:1
+    let fg    = get(a:, 2, s:default_fg)
+    let bg    = get(a:, 3, s:default_bg)
+    let attr  = get(a:, 4, s:none)
+
+    let cmd = ['hi', group]
+    call add(cmd, 'guifg='.fg[0])
+    call add(cmd, 'guibg='.bg[0])
+    call add(cmd, 'gui='.attr)
+    call add(cmd, 'ctermfg='.fg[1])
+    call add(cmd, 'ctermbg='.bg[1])
+    call add(cmd, 'cterm='.attr)
+    call add(cmd, 'term='.attr)
+
+    exec join(cmd, ' ')
+endfunction
+
+" Basic colors.
+call s:hi('Normal')
+call s:hi('Cursor', s:black, s:lgray)
+
+" Cursor line.
+call s:hi('CursorLine', s:default_fg, s:bgray)
+call s:hi('CursorLineNr', s:white, s:default_bg, s:bold)
+
+" Color column.
+call s:hi('ColorColumn', s:default_fg, s:bgray)
+
+" Folding.
+call s:hi('FoldColumn', s:dgray)
+call s:hi('Folded')
+
+" Line numbers gutter.
+call s:hi('LineNr', s:dgray)
+
+" Main groups for programming languages.
+call s:hi('Statement', s:white, s:default_bg, s:bold)
+call s:hi('PreProc', s:white, s:default_bg, s:bold)
+call s:hi('String', s:sblue)
+call s:hi('Comment', s:cgray)
+call s:hi('Constant')
+call s:hi('Type', s:white, s:default_bg, s:bold)
+call s:hi('Function', s:white)
+call s:hi('Identifier')
+call s:hi('Special')
+call s:hi('MatchParen', s:black, s:lgray)
+
+" Ruby.
+call s:hi('rubyConstant')
+call s:hi('rubySharpBang', s:cgray)
+call s:hi('rubyStringDelimiter', s:sblue)
+call s:hi('rubyStringEscape', s:sblue)
+call s:hi('rubyRegexpEscape', s:sblue)
+call s:hi('rubyRegexpAnchor', s:sblue)
+call s:hi('rubyRegexpSpecial', s:sblue)
+
+" Perl.
+call s:hi('perlSharpBang', s:cgray)
+call s:hi('perlStringStartEnd', s:sblue)
+call s:hi('perlStringEscape', s:sblue)
+call s:hi('perlMatchStartEnd', s:sblue)
+
+" Python.
+call s:hi('pythonEscape', s:sblue)
+
+" JavaScript.
+call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
+
+" Elixir.
+call s:hi('elixirDelimiter', s:sblue)
+
+" VimL.
+call s:hi('vimOption')
+call s:hi('vimGroup')
+call s:hi('vimHiClear')
+call s:hi('vimHiGroup')
+call s:hi('vimHiAttrib')
+call s:hi('vimHiGui')
+call s:hi('vimHiGuiFgBg')
+call s:hi('vimHiCTerm')
+call s:hi('vimHiCTermFgBg')
+call s:hi('vimSynType')
+call s:hi('vimCommentTitle', s:cgray)
+
+" Search.
+call s:hi('Search', s:white, s:sblue)
+call s:hi('Visual', s:white, s:sblue)
+
+" Tildes at the bottom of a buffer, etc.
+call s:hi('NonText', s:dgray)
+
+" File browsers.
+call s:hi('Directory', s:white, s:default_bg, s:bold)
+
+" Markup
+call s:hi('Title', s:white, s:default_bg, s:bold)
+call s:hi('markdownHeadingDelimiter', s:white, s:default_bg, s:bold)
+call s:hi('markdownHeadingRule', s:white, s:default_bg, s:bold)
+call s:hi('markdownLinkText', s:sblue, s:default_bg, s:underline)
+
+" Notes.
+call s:hi('Todo', s:black, s:yellow, s:bold)
+
+" Popup menu.
+call s:hi('Pmenu', s:white, s:sblue)
+call s:hi('PmenuSel', s:sblue, s:white)
+
+" Help.
+call s:hi('helpSpecial')
+call s:hi('helpHyperTextJump', s:sblue, s:default_bg, s:underline)
+call s:hi('helpNote')
+
+" NeoMake
+call s:hi('NeomakeMessageSign')
+call s:hi('NeomakeWarningSign', s:sblue)
+call s:hi('NeomakeErrorSign', s:yellow)
+call s:hi('NeomakeInfoSign')
+call s:hi('NeomakeError', s:yellow)
+call s:hi('NeomakeInfo', s:default_fg, s:default_bg, s:bold)
+call s:hi('NeomakeMessage')
+call s:hi('NeomakeWarning', s:yellow)
