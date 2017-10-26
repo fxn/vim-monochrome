@@ -106,6 +106,7 @@ call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
 
 " Elixir.
 call s:hi('elixirDelimiter', s:sblue)
+call s:hi('elixirDocTest', s:cgray, s:default_bg, s:comment_attr)
 
 " VimL.
 call s:hi('vimOption')
