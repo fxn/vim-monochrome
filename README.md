@@ -27,31 +27,11 @@ It is important that the flag is set before loading the theme.
 
 ### Screenshots
 
-#### Ruby
+Monochrome looks like this by default:
 
-![Monochrome Color Scheme for Vim - Ruby](img/ruby.jpg)
+![Monochrome Color Scheme - Opaque](img/vim_monochrome_opaque.png)
 
-#### C
+This capture show italics enabled for comments, and a transparent setup with a
+dark wooden background:
 
-![Monochrome Color Scheme for Vim - C](img/c.jpg)
-
-#### Go
-
-![Monochrome Color Scheme for Vim - Go](img/go.jpg)
-
-#### Perl
-
-![Monochrome Color Scheme for Vim - Perl](img/perl.jpg)
-
-#### Python
-
-![Monochrome Color Scheme for Vim - Python](img/python.jpg)
-
-#### Elixir
-
-![Monochrome Color Scheme for Vim - Elixir](img/elixir.jpg)
-
-#### JavaScript
-
-![Monochrome Color Scheme for Vim - JavaScrit](img/javascript.jpg)
-
+![Monochrome Color Scheme - Transparent](img/vim_monochrome_transparent.png)
