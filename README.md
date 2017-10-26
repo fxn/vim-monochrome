@@ -16,8 +16,14 @@ to your init file.
 This color scheme works in GUIs and 256 color terminals, throw this to your
 _~/.vimrc_:
 
-    syntax on
     colorscheme monochrome
+
+Comments can optionally be rendered using italics:
+
+    let g:monochrome_italic_comments = 1
+    colorscheme monochrome
+
+It is important that the flag is set before loading the theme.
 
 ### Screenshots
 

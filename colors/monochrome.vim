@@ -30,6 +30,11 @@ let s:bold      = 'bold'
 let s:underline = 'underline'
 let s:none      = 'NONE'
 
+if !exists("g:monochrome_italic_comments")
+  let g:monochrome_italic_comments = 0
+endif
+let s:comment_attr = g:monochrome_italic_comments ? s:italic : s:none
+
 function! s:hi(...)
     let group = a:1
     let fg    = get(a:, 2, s:default_fg)
@@ -70,7 +75,7 @@ call s:hi('LineNr', s:dgray)
 call s:hi('Statement', s:white, s:default_bg, s:bold)
 call s:hi('PreProc', s:white, s:default_bg, s:bold)
 call s:hi('String', s:sblue)
-call s:hi('Comment', s:cgray)
+call s:hi('Comment', s:cgray, s:default_bg, s:comment_attr)
 call s:hi('Constant')
 call s:hi('Type', s:white, s:default_bg, s:bold)
 call s:hi('Function', s:white)
