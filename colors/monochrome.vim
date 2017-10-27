@@ -30,6 +30,8 @@ let s:bold      = 'bold'
 let s:underline = 'underline'
 let s:none      = 'NONE'
 
+let s:default   = []
+
 if !exists("g:monochrome_italic_comments")
   let g:monochrome_italic_comments = 0
 endif
@@ -42,13 +44,22 @@ function! s:hi(...)
     let attr  = get(a:, 4, s:none)
 
     let cmd = ['hi', group]
-    call add(cmd, 'guifg='.fg[0])
-    call add(cmd, 'guibg='.bg[0])
-    call add(cmd, 'gui='.attr)
-    call add(cmd, 'ctermfg='.fg[1])
-    call add(cmd, 'ctermbg='.bg[1])
-    call add(cmd, 'cterm='.attr)
-    call add(cmd, 'term='.attr)
+
+    if fg != s:default
+        call add(cmd, 'guifg='.fg[0])
+        call add(cmd, 'ctermfg='.fg[1])
+    endif
+
+    if bg != s:default
+        call add(cmd, 'guibg='.bg[0])
+        call add(cmd, 'ctermbg='.bg[1])
+    endif
+
+    if attr != s:default
+        call add(cmd, 'gui='.attr)
+        call add(cmd, 'cterm='.attr)
+        call add(cmd, 'term='.attr)
+    endif
 
     exec join(cmd, ' ')
 endfunction
@@ -58,7 +69,7 @@ call s:hi('Normal')
 call s:hi('Cursor', s:black, s:lgray)
 
 " Cursor line.
-call s:hi('CursorLine', s:default_fg, s:bgray)
+call s:hi('CursorLine', s:default, s:bgray, s:default)
 call s:hi('CursorLineNr', s:white, s:default_bg, s:bold)
 
 " Color column.
