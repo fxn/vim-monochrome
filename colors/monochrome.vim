@@ -156,8 +156,8 @@ call s:hi('diffNewFile', s:cgray)
 call s:hi('diffIndexLine', s:cgray)
 call s:hi('diffLine', s:cgray)
 call s:hi('diffSubname', s:cgray)
-call s:hi('diffAdded', s:green)
-call s:hi('diffRemoved', s:red)
+call s:hi('diffAdded', s:default_lst, s:green)
+call s:hi('diffRemoved', s:default_lst, s:red)
 
 " vim-fugitive
 call s:hi('gitcommitComment', s:default_fg, s:default_bg, s:none)
