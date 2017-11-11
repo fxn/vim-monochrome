@@ -1,5 +1,13 @@
 ## monochrome - A dark Vim color scheme for your focused hacking sessions
 
+### Look & Feel
+
+<p align="center">
+<img alt="Monochrome Vim color scheme" src="img/vim-monochrome.jpg"/>
+</p>
+
+Works in GUI/true-color terminals, as well as 256-color terminals.
+
 ### Installation
 
 Installation depends on how you manage packages. For example, with
@@ -13,8 +21,7 @@ to your init file.
 
 ### Configuration
 
-This color scheme works in GUIs and 256 color terminals, throw this to your
-_~/.vimrc_:
+Just throw this to your _~/.vimrc_:
 
     colorscheme monochrome
 
@@ -25,13 +32,3 @@ Comments can optionally be rendered using italics:
 
 It is important that the flag is set before loading the theme.
 
-### Screenshots
-
-Monochrome looks like this by default:
-
-![Monochrome Color Scheme - Opaque](img/vim_monochrome_opaque.png)
-
-This capture show italics enabled for comments, and a transparent setup with a
-dark wooden background:
-
-![Monochrome Color Scheme - Transparent](img/vim_monochrome_transparent.png)
