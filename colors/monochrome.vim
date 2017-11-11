@@ -122,8 +122,10 @@ call s:hi('pythonEscape', s:sblue)
 call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
 
 " Elixir.
+call s:hi('elixirAlias', s:default_fg, s:default_bg, s:none)
 call s:hi('elixirDelimiter', s:sblue)
 call s:hi('elixirDocTest', s:cgray, s:default_bg, s:comment_attr)
+call s:hi('elixirSelf', s:default_fg, s:default_bg, s:none)
 
 " VimL.
 call s:hi('vimOption')
