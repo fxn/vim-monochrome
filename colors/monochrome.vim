@@ -21,6 +21,8 @@ let s:cgray  = ['#737373', 243]
 let s:dgray  = ['DarkGray', 248]
 let s:sblue  = ['#778899', 67]
 let s:yellow = ['Yellow', 226]
+let s:red    = ['#b6403a', 160]
+let s:green  = ['#478226', 28]
 
 let s:default_fg = s:lgray
 let s:default_bg = s:black
@@ -83,6 +85,9 @@ call s:hi('Folded')
 " Line numbers gutter.
 call s:hi('LineNr', s:dgray)
 
+" Small arrow used for tabs.
+call s:hi('SpecialKey', s:default_fg, s:default_bg, s:bold)
+
 " Main groups for programming languages.
 call s:hi('Statement', s:white, s:default_bg, s:bold)
 call s:hi('PreProc', s:white, s:default_bg, s:bold)
@@ -142,6 +147,25 @@ call s:hi('NonText', s:dgray)
 
 " File browsers.
 call s:hi('Directory', s:white, s:default_bg, s:bold)
+
+" Diffs
+call s:hi('diffFile', s:cgray)
+call s:hi('diffNewFile', s:cgray)
+call s:hi('diffIndexLine', s:cgray)
+call s:hi('diffLine', s:cgray)
+call s:hi('diffSubname', s:cgray)
+call s:hi('diffAdded', s:green)
+call s:hi('diffRemoved', s:red)
+
+" vim-fugitive
+call s:hi('gitcommitComment', s:default_fg, s:default_bg, s:none)
+call s:hi('gitcommitOnBranch', s:default_fg, s:default_bg, s:none)
+call s:hi('gitcommitBranch', s:sblue, s:default_bg, s:none)
+call s:hi('gitcommitHeader', s:white, s:default_bg, s:bold)
+call s:hi('gitcommitSelected', s:default_fg, s:default_bg, s:none)
+call s:hi('gitcommitDiscarded', s:default_fg, s:default_bg, s:none)
+call s:hi('gitcommitSelectedType', s:default_fg, s:default_bg, s:none)
+call s:hi('gitcommitDiscardedType', s:default_fg, s:default_bg, s:none)
 
 " Markup
 call s:hi('Title', s:white, s:default_bg, s:bold)
