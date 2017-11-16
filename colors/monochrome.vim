@@ -61,7 +61,6 @@ function! s:hi(...)
     if attr != s:default_str
         call add(cmd, 'gui='.attr)
         call add(cmd, 'cterm='.attr)
-        call add(cmd, 'term='.attr)
     endif
 
     exec join(cmd, ' ')
@@ -138,7 +137,7 @@ call s:hi('vimHiGuiFgBg')
 call s:hi('vimHiCTerm')
 call s:hi('vimHiCTermFgBg')
 call s:hi('vimSynType')
-call s:hi('vimCommentTitle', s:cgray)
+hi link vimCommentTitle Comment
 
 " Search.
 call s:hi('Search', s:white, s:sblue)
