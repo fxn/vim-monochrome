@@ -123,8 +123,15 @@ call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
 " Elixir.
 call s:hi('elixirAlias', s:default_fg, s:default_bg, s:none)
 call s:hi('elixirDelimiter', s:sblue)
-call s:hi('elixirDocTest', s:cgray, s:default_bg, s:comment_attr)
+" For ||, ->, etc.
+call s:hi('elixirOperator')
 call s:hi('elixirSelf', s:default_fg, s:default_bg, s:none)
+hi link elixirStringDelimiter String
+" Module attributes like @doc or @type.
+hi link elixirVariable Statement
+" While rendered as comments in other languages, docstrings are strings, experimental.
+hi link elixirDocString String
+hi link elixirDocTest String
 
 " VimL.
 call s:hi('vimOption')
