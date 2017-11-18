@@ -2,11 +2,15 @@
 
 ### Look & Feel
 
+`vim-monochrome` works in GUI/true-color terminals, as well as 256-color terminals:
+
 <p align="center">
-<img alt="Monochrome Vim color scheme" src="img/vim-monochrome.jpg"/>
+<img alt="Monochrome Vim color scheme" src="img/vim-monochrome.png"/>
 </p>
 
-Works in GUI/true-color terminals, as well as 256-color terminals.
+The status line in the screenshot is
+[lightline.vim](https://github.com/itchyny/lightline.vim) with the `nord` color
+scheme, which is a great match.
 
 ### Installation
 
