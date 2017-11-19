@@ -78,6 +78,7 @@ call s:hi('CursorLineNr', s:white, s:default_bg, s:bold)
 call s:hi('ColorColumn', s:default_fg, s:bgray)
 call s:hi('Search', s:white, s:sblue)
 call s:hi('Visual', s:white, s:sblue)
+call s:hi('ErrorMsg', s:white, s:red)
 
 " Tildes at the bottom of a buffer, etc.
 call s:hi('NonText', s:dgray)
@@ -208,8 +209,8 @@ call s:hi('diffNewFile', s:cgray)
 call s:hi('diffIndexLine', s:cgray)
 call s:hi('diffLine', s:cgray)
 call s:hi('diffSubname', s:cgray)
-call s:hi('diffAdded', s:default_lst, s:green)
-call s:hi('diffRemoved', s:default_lst, s:red)
+call s:hi('diffAdded', s:white, s:green)
+call s:hi('diffRemoved', s:white, s:red)
 
 
 "
