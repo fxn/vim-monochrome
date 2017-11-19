@@ -66,16 +66,21 @@ function! s:hi(...)
     exec join(cmd, ' ')
 endfunction
 
-" Basic colors.
+
+"
+" --- Vim interface ------------------------------------------------------------
+"
+
 call s:hi('Normal')
 call s:hi('Cursor', s:black, s:lgray)
-
-" Cursor line.
 call s:hi('CursorLine', s:default_lst, s:bgray, s:default_str)
 call s:hi('CursorLineNr', s:white, s:default_bg, s:bold)
-
-" Color column.
 call s:hi('ColorColumn', s:default_fg, s:bgray)
+call s:hi('Search', s:white, s:sblue)
+call s:hi('Visual', s:white, s:sblue)
+
+" Tildes at the bottom of a buffer, etc.
+call s:hi('NonText', s:dgray)
 
 " Folding.
 call s:hi('FoldColumn', s:dgray)
@@ -87,7 +92,26 @@ call s:hi('LineNr', s:dgray)
 " Small arrow used for tabs.
 call s:hi('SpecialKey', s:default_fg, s:default_bg, s:bold)
 
-" Main groups for programming languages.
+" File browsers.
+call s:hi('Directory', s:white, s:default_bg, s:bold)
+
+" Help.
+call s:hi('helpSpecial')
+call s:hi('helpHyperTextJump', s:sblue, s:default_bg, s:underline)
+call s:hi('helpNote')
+
+" Popup menu.
+call s:hi('Pmenu', s:white, s:sblue)
+call s:hi('PmenuSel', s:sblue, s:white)
+
+" Notes.
+call s:hi('Todo', s:black, s:yellow, s:bold)
+
+
+"
+" --- Programming languages ----------------------------------------------------
+"
+
 call s:hi('Statement', s:white, s:default_bg, s:bold)
 call s:hi('PreProc', s:white, s:default_bg, s:bold)
 call s:hi('String', s:sblue)
@@ -99,41 +123,11 @@ call s:hi('Identifier')
 call s:hi('Special')
 call s:hi('MatchParen', s:black, s:lgray)
 
-" Ruby.
-call s:hi('rubyConstant')
-call s:hi('rubySharpBang', s:cgray)
-call s:hi('rubyStringDelimiter', s:sblue)
-call s:hi('rubyStringEscape', s:sblue)
-call s:hi('rubyRegexpEscape', s:sblue)
-call s:hi('rubyRegexpAnchor', s:sblue)
-call s:hi('rubyRegexpSpecial', s:sblue)
 
-" Perl.
-call s:hi('perlSharpBang', s:cgray)
-call s:hi('perlStringStartEnd', s:sblue)
-call s:hi('perlStringEscape', s:sblue)
-call s:hi('perlMatchStartEnd', s:sblue)
+"
+" --- VimL ---------------------------------------------------------------------
+"
 
-" Python.
-call s:hi('pythonEscape', s:sblue)
-
-" JavaScript.
-call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
-
-" Elixir.
-call s:hi('elixirAlias', s:default_fg, s:default_bg, s:none)
-call s:hi('elixirDelimiter', s:sblue)
-" For ||, ->, etc.
-call s:hi('elixirOperator')
-call s:hi('elixirSelf', s:default_fg, s:default_bg, s:none)
-hi link elixirStringDelimiter String
-" Module attributes like @doc or @type.
-hi link elixirVariable Statement
-" While rendered as comments in other languages, docstrings are strings, experimental.
-hi link elixirDocString String
-hi link elixirDocTest String
-
-" VimL.
 call s:hi('vimOption')
 call s:hi('vimGroup')
 call s:hi('vimHiClear')
@@ -146,17 +140,69 @@ call s:hi('vimHiCTermFgBg')
 call s:hi('vimSynType')
 hi link vimCommentTitle Comment
 
-" Search.
-call s:hi('Search', s:white, s:sblue)
-call s:hi('Visual', s:white, s:sblue)
 
-" Tildes at the bottom of a buffer, etc.
-call s:hi('NonText', s:dgray)
+"
+" --- Ruby ---------------------------------------------------------------------
+"
 
-" File browsers.
-call s:hi('Directory', s:white, s:default_bg, s:bold)
+call s:hi('rubyConstant')
+call s:hi('rubySharpBang', s:cgray)
+call s:hi('rubyStringDelimiter', s:sblue)
+call s:hi('rubyStringEscape', s:sblue)
+call s:hi('rubyRegexpEscape', s:sblue)
+call s:hi('rubyRegexpAnchor', s:sblue)
+call s:hi('rubyRegexpSpecial', s:sblue)
 
-" Diffs
+
+"
+" --- Elixir -------------------------------------------------------------------
+"
+
+call s:hi('elixirAlias', s:default_fg, s:default_bg, s:none)
+call s:hi('elixirDelimiter', s:sblue)
+call s:hi('elixirSelf', s:default_fg, s:default_bg, s:none)
+
+" For ||, ->, etc.
+call s:hi('elixirOperator')
+
+" Module attributes like @doc or @type.
+hi link elixirVariable Statement
+
+" While rendered as comments in other languages, docstrings are strings,
+" experimental.
+hi link elixirDocString String
+hi link elixirDocTest String
+hi link elixirStringDelimiter String
+
+
+"
+" --- Perl ---------------------------------------------------------------------
+"
+
+call s:hi('perlSharpBang', s:cgray)
+call s:hi('perlStringStartEnd', s:sblue)
+call s:hi('perlStringEscape', s:sblue)
+call s:hi('perlMatchStartEnd', s:sblue)
+
+
+"
+" --- Python -------------------------------------------------------------------
+"
+
+call s:hi('pythonEscape', s:sblue)
+
+
+"
+" --- JavaScript ---------------------------------------------------------------
+"
+
+call s:hi('javaScriptFunction', s:white, s:default_bg, s:bold)
+
+
+"
+" --- Diffs --------------------------------------------------------------------
+"
+
 call s:hi('diffFile', s:cgray)
 call s:hi('diffNewFile', s:cgray)
 call s:hi('diffIndexLine', s:cgray)
@@ -165,7 +211,21 @@ call s:hi('diffSubname', s:cgray)
 call s:hi('diffAdded', s:default_lst, s:green)
 call s:hi('diffRemoved', s:default_lst, s:red)
 
-" vim-fugitive
+
+"
+" --- Markdown -----------------------------------------------------------------
+"
+
+call s:hi('Title', s:white, s:default_bg, s:bold)
+call s:hi('markdownHeadingDelimiter', s:white, s:default_bg, s:bold)
+call s:hi('markdownHeadingRule', s:white, s:default_bg, s:bold)
+call s:hi('markdownLinkText', s:sblue, s:default_bg, s:underline)
+
+
+"
+" --- vim-fugitive -------------------------------------------------------------
+"
+
 call s:hi('gitcommitComment', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitOnBranch', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitBranch', s:sblue, s:default_bg, s:none)
@@ -175,25 +235,11 @@ call s:hi('gitcommitDiscarded', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitSelectedType', s:default_fg, s:default_bg, s:none)
 call s:hi('gitcommitDiscardedType', s:default_fg, s:default_bg, s:none)
 
-" Markup
-call s:hi('Title', s:white, s:default_bg, s:bold)
-call s:hi('markdownHeadingDelimiter', s:white, s:default_bg, s:bold)
-call s:hi('markdownHeadingRule', s:white, s:default_bg, s:bold)
-call s:hi('markdownLinkText', s:sblue, s:default_bg, s:underline)
 
-" Notes.
-call s:hi('Todo', s:black, s:yellow, s:bold)
+"
+" --- NeoMake ------------------------------------------------------------------
+"
 
-" Popup menu.
-call s:hi('Pmenu', s:white, s:sblue)
-call s:hi('PmenuSel', s:sblue, s:white)
-
-" Help.
-call s:hi('helpSpecial')
-call s:hi('helpHyperTextJump', s:sblue, s:default_bg, s:underline)
-call s:hi('helpNote')
-
-" NeoMake
 call s:hi('NeomakeMessageSign')
 call s:hi('NeomakeWarningSign', s:sblue)
 call s:hi('NeomakeErrorSign', s:yellow)
