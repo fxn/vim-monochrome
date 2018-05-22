@@ -91,7 +91,7 @@ call s:hi('Folded')
 call s:hi('LineNr', s:dgray)
 
 " Small arrow used for tabs.
-call s:hi('SpecialKey', s:sblue, s:black, s:bold)
+call s:hi('SpecialKey', s:sblue, s:default_bg, s:bold)
 
 " File browsers.
 call s:hi('Directory', s:white, s:default_bg, s:bold)
