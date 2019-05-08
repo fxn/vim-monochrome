@@ -53,7 +53,7 @@ function! s:hi(...)
         call add(cmd, 'ctermfg='.fg[1])
     endif
 
-    if bg != s:default_lst && bg != default_bg
+    if bg != s:default_lst && bg != s:default_bg
         call add(cmd, 'guibg='.bg[0])
         call add(cmd, 'ctermbg='.bg[1])
     endif
