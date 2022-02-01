@@ -150,6 +150,7 @@ hi link vimCommentTitle Comment
 
 call s:hi('rubyConstant')
 call s:hi('rubySharpBang', s:cgray)
+call s:hi('rubySymbol', s:sblue)
 call s:hi('rubyStringDelimiter', s:sblue)
 call s:hi('rubyStringEscape', s:sblue)
 call s:hi('rubyRegexpEscape', s:sblue)
